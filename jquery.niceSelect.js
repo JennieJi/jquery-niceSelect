@@ -55,7 +55,7 @@
                 // build HTML
                 var newSelect = '<div class="' + CLASS.select + ( isDisabled ? ' niceSelect-disabled' : '' ) + '" style="width:' + selectWidth +'px; height:' + selectHeight +  'px; position:relative;"></div>',
 	                newSelectOpen = '<div class="' + CLASS.selectOpen + '" style="float:right; height:' + selectHeight +  'px;"></div>',
-	                newSelectText = '<div class="' + CLASS.selectText + '" style="height:' + selectHeight +  'px; overflow:hidden;">' + $selected.text() + '</div>',
+	                newSelectText = '<div class="' + CLASS.selectText + '" style="height:' + selectHeight +  'px; line-height:' + selectHeight +  'px; overflow:hidden;">' + $selected.text() + '</div>',
 	                newDropdown = function(){
 	                	return '<ul class="' + CLASS.dropdown + '" style="display:none; position:absolute; z-index:' + opts.zindex + ';"></ul>';
 	                };
