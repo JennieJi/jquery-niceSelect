@@ -1,0 +1,36 @@
+<!DOCTYPE html >
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>niceSelect</title>
+    <link href="jquery.niceSelect.css" rel="stylesheet" media="screen">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="jquery.niceSelect.js"></script>
+  </head>
+  <body>
+    <h1>jquery.niceSelect.js demo</h1>
+    <select name="" id="" style="width: 200px; height:30px;">
+      <option value="1">test option 1</option>
+      <option value="2">test option 2</option>
+      <option value="3">test option 3</option>
+    </select>
+    <br/>
+    <input type="button" id="init" value="Init">
+    <input type="button" id="destroy" value="Destroy">
+    <input type="button" id="refresh" value="Refresh">
+
+    <script type="text/javascript">
+      var $select = $('select');
+      $('#init').click(function () {
+        $select.niceSelect();
+      });
+      $('#destroy').click(function () {
+        $select.niceSelect().destroy();
+      });
+      $('#refresh').click(function () {
+        $select.niceSelect().refresh();
+      });
+    </script>
+
+  </body>
+</html>
